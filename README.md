@@ -1,55 +1,47 @@
-# PixelForge 🎨
 
-**A customizable Python Pixel Art Converter**
+# PixelForge Studio 2.0
 
-PixelForge is an image-processing application built with Python and Pillow. It transforms regular images into pixel art through color quantization, image resizing, and nearest-neighbor interpolation.
+A Python-based image-to-pixel-art converter built with Pillow and Tkinter.
 
 ## Features
 
-- Custom pixel resolution
-- Adjustable pixel block size
-- Adaptive color palette
-- Floyd–Steinberg dithering
-- Multiple resampling filters
-- Brightness and contrast adjustment
-- Saturation and sharpness controls
+- Image-to-pixel-art conversion
+- Adjustable pixel resolution and pixel size
+- Adaptive color palette reduction
+- Floyd-Steinberg dithering
+- Brightness, contrast, saturation and sharpness controls
+- Multiple image sampling filters
 - Optional pixel grid overlay
 - PNG and JPEG export
-- Desktop GUI (Tkinter)
+- Scrollable settings panel
+- Before and after preview
+- Background processing with progress tracking
+- Conversion cancellation
 
-## Technologies
+## Requirements
 
-- Python 3
+- Python 3.10+
 - Pillow
-- Tkinter
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/nightmareE111/PixelForge.git
 cd PixelForge
 ```
 
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+py -m pip install -r requirements.txt
 ```
 
-## Usage
-
-Run the command-line version:
+## Run
 
 ```bash
-python pixelforge.py original_reference.jpg
-```
-
-Run the graphical interface:
-
-```bash
-python pixelforge_gui.py
+py pixelforge_gui.py
 ```
 
 ## Project Structure
@@ -58,31 +50,37 @@ python pixelforge_gui.py
 PixelForge/
 ├── pixelforge.py
 ├── pixelforge_gui.py
-├── README.md
 ├── requirements.txt
+├── README.md
 ├── LICENSE
-├── .gitignore
-└── assets/
+└── .gitignore
 ```
 
-## How It Works
+## Technologies
 
-1. Load an input image.
-2. Resize it into a smaller pixel grid.
-3. Reduce the number of colors using adaptive quantization.
-4. Optionally apply dithering.
-5. Enlarge the grid using nearest-neighbor interpolation.
-6. Export the final pixel art.
+- Python
+- Tkinter
+- Pillow
 
+## Version
 
-## Credits
-
-- **Original Artwork:** [@mangoscribble](https://www.instagram.com/mangoscribble/)
-
-Special thanks to the original artist for the artwork used as a reference for this project.
-
-All rights to the original artwork belong to its creator.
+2.0.0
 
 ## License
 
-MIT License.
+This project is licensed under the MIT License.
+
+
+## Artwork Credits & Copyright
+
+The promotional artwork used for PixelForge Studio is credited to:
+
+**Original Artist:** [@mangoscribble](https://www.instagram.com/mangoscribble/)
+
+All rights to the original artwork belong to its respective creator.
+
+The artwork is used with the artist's permission.
+
+**Important:** The MIT License applies only to the PixelForge source code. It does not apply to the original artwork, promotional illustrations, or other third-party assets.
+
+Please contact the original artist for permission before reusing or redistributing the artwork.
